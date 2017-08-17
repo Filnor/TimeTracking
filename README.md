@@ -4,7 +4,7 @@ When I started programming, I can to the point where I got to Java & object-orie
 Some years have past and I rediscovered my code and laughed how shitty these 560 lines of code are. Here some facts:
 
 - All code is in one file. Because Classes are to complicated.
-- GUI Library is Swing, not JavaFX, a 15-year old framework sure be better than a very new one.
+- GUI Library is Swing, not JavaFX, a 15-year old framework will sure do better than a very new one.
 - It got database handling, but the database had only one table with a bunch of `VARCHAR(255)` columns.
 - I broke the code conventions of Java and applied my own, inconsistent ones (see code below)
 - I didn't know that something like String formatting even existed back then, so building an `INSERT` statement looked like this:
