@@ -1,12 +1,13 @@
 # TimeTracking
-When I started programming, I can to the point where I got to Java & object-oriented programming and for whatever reason I coded a time-tracking software, of course better than any existing solutions.
+When I started programming, I came to the point where I got to Java & object-oriented programming and for whatever reason I coded a time-tracking software, which of course would have been better than any existing solutions.
 
 Some years have past and I rediscovered my code and laughed how shitty these 560 lines of code are. Here some facts:
 
-- All code is in one file. Because Classes are to complicated.
-- GUI Library is Swing, not JavaFX, a 15-year old framework will sure do better than a very new one.
-- It got database handling, but the database had only one table with a bunch of `VARCHAR(255)` columns.
-- I broke the code conventions of Java and applied my own, inconsistent ones (see code below)
+- All code is in one file. No classes or interfaces. Nothing at all.
+- GUI Library is Swing, but learning JavaFX would have been much easier (Swing is in standart Java since 1998, JFX since 2014)
+- It got database handling, but the database had only one table with a bunch of columns, but I actually just wrote back strings to the database.
+- I didn't update a table, I truncated it and just inserted all the rows again. (without reseeding IDs in the process, so you would end up with id `99999...` if you even scroll that far without getting mad).
+- I didn't follow any code conventions, so variable naming is a bit messy, like the whole code
 - I didn't know that something like String formatting even existed back then, so building an `INSERT` statement looked like this:
 
 ```java
@@ -23,10 +24,13 @@ stmt.executeUpdate(sSaveData);
 ```
 
 And last but not least:
-- I wasted 45 hours of my life for this :unamused:
+- I wasted 45 hours of my life for this... project (Not sure why I had nothing better to do with my time)
 
-## But hey, at least it runs! Or not?
-Well, if you import the SQL dump on a MySQL database server, change the connection settings and add the MySQL JDBC Connector to your Project.
+## Installation & Usage
+Load the dump to your MySQL server, edit the connection properties and run it from your IDE or command line, if you want.
+
+## Contribution
+Your improvements are welcome, but please refer to the upcoming branch where I also do some improvements and rewritings.
 
 ### Credits
-Thanks to @raxod502, who inspired me to upload my own bad application with his Repository [TerraFrame](https://github.com/raxod502/TerraFrame).
+Thanks to @raxod502, who inspired me to upload my own bad application with his repository [TerraFrame](https://github.com/raxod502/TerraFrame).
