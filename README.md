@@ -29,8 +29,5 @@ And last but not least:
 ## Installation & Usage
 Load the dump to your MySQL server, edit the connection properties and run it from your IDE or command line, if you want.
 
-## Contribution
-Your improvements are welcome, but please refer to the upcoming branch where I also do some improvements and rewritings.
-
 ### Credits
 Thanks to @raxod502, who inspired me to upload my own bad application with his repository [TerraFrame](https://github.com/raxod502/TerraFrame).
